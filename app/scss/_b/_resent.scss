@@ -1,0 +1,123 @@
+.resent{
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  &__description{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__cart{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  &__cart-items{
+    width: 370px;
+    height: 395px;
+    border: 1px solid #f8f8f8;
+    position: relative;
+  }
+
+  &__cart-items:hover{
+    background-color: #362f2d;
+    border: none;
+  }
+
+  &__cart-items:hover &__hover{
+    opacity: 1;
+  }
+
+  &__description{
+    //padding: 1px 280px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  &__title{
+    color: #555555;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    padding-left: 30px;
+    padding-top: 25px;
+  }
+
+  &__text{
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  &__link{
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-left: 30px;
+
+  }
+  &__link-img{
+    padding-bottom: 1px;
+    padding-left: 3px;
+
+  }
+  &__link:hover{
+    text-decoration: none;
+    color: #c7b299;
+  }
+
+  &__hover{
+    position: absolute;
+    width: 370px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+  }
+
+  &__calendar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__calendar-hover{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+  }
+
+  &__cart-items:hover &__calendar-hover{
+    opacity: 1;
+  }
+
+  &__cart-items:hover &__title{
+    color: #c7b299;
+  }
+
+  &__cart-items:hover &__text{
+    color: #ffffff;
+  }
+
+  &__div-buttons{
+    text-align: center;
+    padding: 40px;
+  }
+
+  &__button{
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+  }
+
+
+}

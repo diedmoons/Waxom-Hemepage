@@ -1,0 +1,77 @@
+.our-projects{
+  display: flex;
+  flex-direction: column;
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  &__title{
+    align-self: center;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+  }
+
+  &____text{
+    align-self: center;
+    max-width: 600px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin: auto;
+  }
+
+  &__li{
+    list-style-type: none;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px
+  }
+
+  &__button{
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: white;
+    padding: 5px 10px;
+  }
+
+  &__button:active{
+    background-color: #998675;
+    color: white;
+  }
+
+
+  &__once-butt{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+  &__once-butt-butt{
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 5px;
+    background-color: #998675;
+    padding: 15px 45px;
+    border: 0px;
+  }
+
+  &__once-butt-span{
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+
+  }
+
+}
