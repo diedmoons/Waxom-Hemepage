@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/photo_back.png');
+  background: url('../images/photo_back.png') no-repeat;
+  background-size: cover;
   position: relative;
 
   &__description {

@@ -10,10 +10,22 @@
     flex-direction: column;
     margin-bottom: 50px;
     text-align: center;
+    padding: 0 60px;
   }
-  &__img{
+  &__img-block{
     align-self: center;
+    width: 100%;
+    height: auto;
   }
+
+  &__img{
+    width: 100%;
+    height: auto;
+    padding: 0 60px
+  }
+
+
+
   &__title{
     color: #555555;
     font-family: "Raleway - Semi Bold";

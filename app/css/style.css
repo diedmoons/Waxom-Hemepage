@@ -45,6 +45,8 @@
     height: 100vh; }
   .banner__full-head {
     padding-top: 20px; }
+  .banner__text {
+    max-width: 550px; }
 
 .logo {
   display: flex;
@@ -57,7 +59,7 @@
   color: #ffffff;
   font-family: Raleway;
   font-size: 36px; }
-  .title_size_big {
+  .title__size_big {
     color: #ffffff;
     font-family: "Raleway - Extra Bold";
     font-size: 52px; }
@@ -82,6 +84,10 @@
   width: 640px;
   display: flex;
   justify-content: space-around; }
+  .menu.responsive {
+    position: relative;
+    top: 70px;
+    left: 100px; }
   .menu__item {
     display: inline-block;
     margin-right: 7px; }
@@ -92,6 +98,11 @@
   .menu__icon {
     color: white;
     display: none; }
+  .menu__item-span {
+    padding-right: 10px; }
+  .menu__icon:hover {
+    text-decoration: none;
+    color: white; }
 
 .link {
   font-size: 14px;
@@ -134,9 +145,16 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    text-align: center; }
+    text-align: center;
+    padding: 0 60px; }
+  .realization-ideas__img-block {
+    align-self: center;
+    width: 100%;
+    height: auto; }
   .realization-ideas__img {
-    align-self: center; }
+    width: 100%;
+    height: auto;
+    padding: 0 60px; }
   .realization-ideas__title {
     color: #555555;
     font-family: "Raleway - Semi Bold";
@@ -282,7 +300,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/photo_back.png");
+  background: url("../images/photo_back.png") no-repeat;
+  background-size: cover;
   position: relative; }
   .div-video__description {
     text-align: center; }
@@ -452,7 +471,7 @@
     text-align: center;
     padding: 40px; }
   .resent__button {
-    border: 0px;
+    border: 0;
     background-color: rgba(0, 0, 0, 0); }
 
 .figure-logos {
@@ -462,7 +481,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
   .figure-logos:after {
     content: '';
     background: rgba(0, 0, 0, 0.5);
@@ -494,7 +513,7 @@
     width: 270px;
     height: 1px;
     background-color: #252525;
-    border: 0px; }
+    border: 0; }
   .footer__arrow {
     padding-bottom: 1px;
     padding-left: 3px; }
@@ -585,7 +604,14 @@
   * {
     box-sizing: border-box; }
   .figure__title-media {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .multipurpose__title {
+    font-size: 26px; }
+  .multipurpose__text {
+    font-size: 16px; }
+  .multipurpose__butt {
+    padding: 0px 30px;
+    margin: 10px; } }
 
 @media screen and (max-width: 768px) {
   * {
@@ -593,4 +619,74 @@
   .figure__title {
     font-size: 1.0rem; }
   .figure__title-media {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .title {
+    font-size: 32px; }
+    .title__size_big {
+      font-size: 45px; }
+  .banner__text {
+    font-size: 15px; }
+  .multipurpose__title {
+    font-size: 22px; }
+  .multipurpose__text {
+    font-size: 14px; }
+  .multipurpose__span2 {
+    font-size: 14px; }
+  .our-projects__ul {
+    padding-left: 0px;
+    width: 480px; } }
+
+@media screen and (max-width: 630px) {
+  .multipurpose {
+    padding: 40px 10px; }
+    .multipurpose__title {
+      font-size: 20px; }
+    .multipurpose__text {
+      font-size: 13px; }
+    .multipurpose__span2 {
+      font-size: 12px; } }
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 28px; }
+    .title__size_big {
+      font-size: 40px; }
+  .banner__text {
+    font-size: 14px; }
+  .logo__title {
+    font-size: 26px; }
+  .logo__img {
+    width: 55px;
+    height: auto; }
+  .menu__item-span {
+    font-size: 20px; }
+  .realization-ideas__img {
+    padding: 0px 30px; }
+  .realization-ideas__title {
+    font-size: 28px; }
+  .realization-ideas__text {
+    font-size: 14px; } }
+
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: 25px; }
+    .title__size_big {
+      font-size: 36px; }
+  .banner__text {
+    font-size: 13px; }
+  .logo__title {
+    font-size: 24px; }
+  .logo__img {
+    width: 53px;
+    height: auto; }
+  .menu__item-span {
+    font-size: 18px; }
+  .realization-ideas__img {
+    padding: 0px 15px; }
+  .realization-ideas__title {
+    font-size: 24px; }
+  .realization-ideas__text {
+    font-size: 13px; }
+  .our-projects__ul {
+    width: auto;
+    flex-wrap: wrap; } }
