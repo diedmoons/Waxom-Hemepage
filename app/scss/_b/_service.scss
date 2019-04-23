@@ -1,5 +1,6 @@
-.figure{
+.service{
   padding: 50px;
+  margin-bottom: 35px;
 
   &__hr{
     width: 70px;
@@ -7,13 +8,13 @@
     background-color: #f1eee9;
 
   }
-  &__info:hover  .figure__hr {
+  &__info:hover  .service__hr {
     background-color:  #c7b299;
     transition: all .3s ease-in-out;
 
   }
 
-  &__info:hover .figure__title{
+  &__info:hover .service__title{
     color:  #c7b299;
     transition: all .3s ease-in-out;
   }

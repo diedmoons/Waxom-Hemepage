@@ -2,14 +2,14 @@
   padding-top: 80px;
   padding-bottom: 50px;
 
-  &__description{
-    text-align: center;
-    margin-bottom: 40px;
-  }
+  //&__description{
+  //  text-align: center;
+  //  margin-bottom: 40px;
+  //}
   &__cart{
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
   }
 
   &__cart-items{
@@ -28,14 +28,14 @@
     opacity: 1;
   }
 
-  &__description{
-    //padding: 1px 280px;
-    color: #8c8c8c;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28px;
-  }
+  //&__description{
+  //  //padding: 1px 280px;
+  //  color: #8c8c8c;
+  //  font-family: Montserrat;
+  //  font-size: 16px;
+  //  font-weight: 300;
+  //  line-height: 28px;
+  //}
 
   &__title{
     color: #555555;

@@ -2,30 +2,21 @@
   color: #ffffff;
   font-family: Raleway;
   font-size: 36px;
+  text-align: center;
 
   &__size_big{
-    color: #ffffff;
     font-family: "Raleway - Extra Bold";
     font-size: 52px;
   }
-  &__title_color_black{
+  &--color-black{
     color: #555555;
   }
 
   &--count{
-    color: #ffffff;
     font-family: "Montserrat - Ultra Light";
     font-size: 48px;
-    font-weight: 400;
     line-height: 36px;
   }
-
-
-  //.numbers__hr{
-  //  width: 30px;
-  //  height: 2px;
-  //  background-color: #ffffff;
-  //}
 
   &--primary{
     color: #555555;
@@ -33,4 +24,11 @@
     font-size: 30px;
     font-weight: 400;
   }
+  &--then-name{
+    font-family: Raleway;
+    font-size: 28px;
+  }
+
+
+
 }

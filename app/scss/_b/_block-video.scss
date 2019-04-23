@@ -1,4 +1,4 @@
-.div-video {
+.block-video {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
     font-size: 20px;
     max-width: 600px;
   }
-  &__time-video{
+  &__time{
     color: #c7b299;
     font-family: Montserrat;
     font-size: 14px;
@@ -34,8 +34,9 @@
     height: 100%;
     position: absolute;
   }
-  &__img{
+  &__block-img{
     align-self: center;
+    margin-bottom: 15px;
   }
   &__content{
     z-index: 55;
@@ -46,7 +47,10 @@
     border: 0px;
     background-color: rgba(0,0,0,0);
   }
-  &:active .time__video{
-    background-color: blue;
+  //&:active .time__video{
+  //  background-color: blue;
+  //}
+  &__content .text--primary{
+    color: #d6d7d9;
   }
 }

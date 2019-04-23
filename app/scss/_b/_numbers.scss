@@ -1,19 +1,4 @@
 .numbers{
   padding: 60px;
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
-
-  &__row{
-    display: flex;
-    justify-content: center;
-  }
-
-  &__hr{
-    width: 30px;
-    height: 2px;
-    background-color: #ffffff;
-  }
-
-  &__img{
-    padding-bottom: 20px;
-  }
 }

@@ -1,0 +1,29 @@
+.list{
+  display: flex;
+  justify-content: center;
+  //width: 600px;
+  //margin: auto;
+
+  &__item{
+    list-style-type: none;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  &--primary{
+    display: block;
+  }
+
+  &--primary li{
+    list-style: none;
+    background: url("../images/01.png") no-repeat left center;
+    padding-left: 38px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    margin-bottom: 10px;
+  }
+
+
+}

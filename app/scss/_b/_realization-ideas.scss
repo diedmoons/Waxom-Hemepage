@@ -1,17 +1,8 @@
 .realization-ideas{
-  display: flex;
-  flex-direction: column;
-  background-color: #fbfaf8;
-  padding-top: 35px;
+  //display: flex;
+  //flex-direction: column;
+  //background-color: #fbfaf8;
 
-  &__description{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    text-align: center;
-    padding: 0 60px;
-  }
   &__img-block{
     align-self: center;
     width: 100%;
@@ -20,24 +11,7 @@
 
   &__img{
     width: 100%;
-    height: auto;
     padding: 0 60px
   }
 
-
-
-  &__title{
-    color: #555555;
-    font-family: "Raleway - Semi Bold";
-    font-size: 30px;
-    font-weight: 400;
-  }
-  &__text{
-    color: #8c8c8c;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28px;
-    max-width: 650px
-  }
 }

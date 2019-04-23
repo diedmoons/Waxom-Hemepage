@@ -1,0 +1,26 @@
+.statistics{
+  display: flex;
+  justify-content: center;
+
+  &__item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__img{
+    padding-bottom: 20px;
+  }
+  &__content{
+    margin-bottom: 20px;
+  }
+  &__content p{
+    margin-bottom: 0;
+  }
+  &__hr{
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+}
