@@ -2,40 +2,30 @@
   padding-top: 80px;
   padding-bottom: 50px;
 
-  //&__description{
-  //  text-align: center;
-  //  margin-bottom: 40px;
-  //}
-  &__cart{
+  &__card{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  &__cart-items{
+  &__card-items{
     width: 370px;
     height: 395px;
     border: 1px solid #f8f8f8;
     position: relative;
   }
 
-  &__cart-items:hover{
+  &__card-items:hover{
     background-color: #362f2d;
     border: none;
   }
 
-  &__cart-items:hover &__hover{
+  &__card-items:hover &__hover{
     opacity: 1;
   }
 
-  //&__description{
-  //  //padding: 1px 280px;
-  //  color: #8c8c8c;
-  //  font-family: Montserrat;
-  //  font-size: 16px;
-  //  font-weight: 300;
-  //  line-height: 28px;
-  //}
+  &__description{
+    margin: 25px;  }
 
   &__title{
     color: #555555;
@@ -43,8 +33,7 @@
     font-size: 20px;
     font-weight: 500;
     display: block;
-    padding-left: 30px;
-    padding-top: 25px;
+
   }
 
   &__text{
@@ -53,8 +42,6 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding-top: 10px;
-    padding-left: 30px;
   }
 
   &__link{
@@ -63,7 +50,6 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
-    padding-left: 30px;
 
   }
   &__link-img{
@@ -97,15 +83,15 @@
     opacity: 0;
   }
 
-  &__cart-items:hover &__calendar-hover{
+  &__card-items:hover &__calendar-hover{
     opacity: 1;
   }
 
-  &__cart-items:hover &__title{
+  &__card-items:hover &__title{
     color: #c7b299;
   }
 
-  &__cart-items:hover &__text{
+  &__card-items:hover &__text{
     color: #ffffff;
   }
 

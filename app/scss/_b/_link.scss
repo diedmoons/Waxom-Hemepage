@@ -5,4 +5,16 @@
     text-decoration: none;
     color: #fff;
   }
+  &--special{
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  &--special:hover{
+    text-decoration: none;
+    color: #a0907c;
+  }
 }

@@ -92,7 +92,6 @@
       font-size: 14px;
     }
     &__ul{
-      //padding-left: 10px;
       margin-top: 20px;
       font-size: 12px;
     }
@@ -158,26 +157,26 @@
 
 @media screen and (max-width: 768px) {
 
-  .figure {
+  //.figure {
+  //
+  //  &__title {
+  //    font-size: 1.0rem;
+  //  }
+  //
+  //  &__title-media {
+  //    font-size: 15px;
+  //  }
+  //
+  //}
 
-    &__title {
-      font-size: 1.0rem;
-    }
-
-    &__title-media {
-      font-size: 15px;
-    }
-
-  }
-
-  .title {
-    font-size: 32px;
-
-    &__size_big {
-      font-size: 45px;
-    }
-
-  }
+  //.title {
+  //  font-size: 32px;
+  //
+  //  &__size_big {
+  //    font-size: 45px;
+  //  }
+  //
+  //}
 
   .banner {
     &__text {
@@ -260,6 +259,18 @@
     }
     &__img{
       width: 100%
+    }
+  }
+
+  .statistics{
+    &__item{
+      margin-bottom: 30px;
+    }
+  }
+
+  .companies{
+    &__item{
+      margin-bottom: 30px;
     }
   }
 

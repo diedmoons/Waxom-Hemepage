@@ -111,14 +111,26 @@
   .link:hover {
     text-decoration: none;
     color: #fff; }
+  .link--special {
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none; }
+  .link--special:hover {
+    text-decoration: none;
+    color: #a0907c; }
 
 .button {
   background-color: #998675;
   border: 0px;
   padding: 5px 35px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 10px;
   color: #ffffff; }
+  .button:active {
+    box-shadow: inset 0 -3px 0 #736357; }
 
 .service {
   padding: 50px;
@@ -154,13 +166,6 @@
   margin-bottom: 80px; }
   .multipurpose__description {
     line-height: 0%; }
-  .multipurpose__butt {
-    background-color: #998675;
-    color: white;
-    border: 0px;
-    padding: 0px 35px;
-    border-radius: 5px;
-    margin: 10px; }
   .multipurpose__text {
     color: #4b423e;
     font-family: Montserrat;
@@ -235,18 +240,6 @@
     display: flex;
     justify-content: center;
     padding-bottom: 60px; }
-  .our-projects__once-butt-butt {
-    box-shadow: inset 0 -3px 0 #736357;
-    border-radius: 5px;
-    background-color: #998675;
-    padding: 15px 45px;
-    border: 0px; }
-  .our-projects__once-butt-span {
-    color: #ffffff;
-    font-family: "Raleway - Extra Bold";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px; }
 
 .block-video {
   height: 100vh;
@@ -302,7 +295,6 @@
     padding: 110px;
     max-width: 740px; }
   .phone__li {
-    /*list-style-image: url("images/01.png");*/
     list-style: none;
     background: url("../images/01.png") no-repeat left center;
     padding-left: 38px; }
@@ -327,26 +319,29 @@
   .phone__info .title--color-black {
     text-align: start; }
 
-.text--brown {
-  color: #c7b299;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  text-transform: uppercase; }
-
-.text--primary {
-  color: #8c8c8c;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-  max-width: 650px;
-  margin: auto;
-  text-align: center; }
-
-.text--color {
-  color: white; }
+.text {
+  font-size: 13px;
+  font-family: Montserrat; }
+  .text--brown {
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .text--primary {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    max-width: 650px;
+    margin: auto;
+    text-align: center; }
+  .text--white {
+    color: white; }
+  .text--gray {
+    color: #555555; }
 
 .numbers {
   padding: 60px;
@@ -355,43 +350,40 @@
 .resent {
   padding-top: 80px;
   padding-bottom: 50px; }
-  .resent__cart {
+  .resent__card {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
-  .resent__cart-items {
+  .resent__card-items {
     width: 370px;
     height: 395px;
     border: 1px solid #f8f8f8;
     position: relative; }
-  .resent__cart-items:hover {
+  .resent__card-items:hover {
     background-color: #362f2d;
     border: none; }
-  .resent__cart-items:hover .resent__hover {
+  .resent__card-items:hover .resent__hover {
     opacity: 1; }
+  .resent__description {
+    margin: 25px; }
   .resent__title {
     color: #555555;
     font-family: Raleway;
     font-size: 20px;
     font-weight: 500;
-    display: block;
-    padding-left: 30px;
-    padding-top: 25px; }
+    display: block; }
   .resent__text {
     color: #8c8c8c;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
-    line-height: 22px;
-    padding-top: 10px;
-    padding-left: 30px; }
+    line-height: 22px; }
   .resent__link {
     color: #c7b299;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
-    line-height: 20px;
-    padding-left: 30px; }
+    line-height: 20px; }
   .resent__link-img {
     padding-bottom: 1px;
     padding-left: 3px; }
@@ -413,11 +405,11 @@
     top: 20px;
     left: 20px;
     opacity: 0; }
-  .resent__cart-items:hover .resent__calendar-hover {
+  .resent__card-items:hover .resent__calendar-hover {
     opacity: 1; }
-  .resent__cart-items:hover .resent__title {
+  .resent__card-items:hover .resent__title {
     color: #c7b299; }
-  .resent__cart-items:hover .resent__text {
+  .resent__card-items:hover .resent__text {
     color: #ffffff; }
   .resent__div-buttons {
     text-align: center;
@@ -449,9 +441,8 @@
 .footer {
   background-image: url("../images/Background_foot.png");
   padding-top: 80px; }
-  .footer__logo {
-    display: flex;
-    padding-bottom: 25px; }
+  .footer .logo {
+    margin-bottom: 25px; }
   .footer__img {
     display: flex;
     flex-wrap: wrap;
@@ -461,7 +452,7 @@
   .footer__img-items {
     padding-bottom: 10px; }
   .footer__title {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     color: #ffffff;
     text-align: center; }
   .footer__title-waxom {
@@ -506,30 +497,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center; }
-  .footer__ul-left {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    width: 370px; }
-  .footer__ul-right {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    width: 300px; }
-  .footer__end-link {
-    color: #555555;
-    font-family: Montserrat;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 20px;
-    text-decoration: none; }
-  .footer__end-link:hover {
-    text-decoration: none;
-    color: #a0907c; }
-  .footer__end-link:hover .footer__end-span {
-    color: #a0907c; }
-  .footer__end-span {
+  .footer .list--style-none {
+    width: 370px;
+    font-size: 13px; }
+  .footer .text--gray span {
     color: #959595; }
+  .footer__end-span {
+    color: #888888; }
+  .footer__end li {
+    color: #454545; }
 
 @media screen and (max-width: 1200px) {
   img {
@@ -613,14 +589,6 @@
     margin-top: 0; } }
 
 @media screen and (max-width: 768px) {
-  .figure__title {
-    font-size: 1.0rem; }
-  .figure__title-media {
-    font-size: 15px; }
-  .title {
-    font-size: 32px; }
-    .title__size_big {
-      font-size: 45px; }
   .banner__text {
     font-size: 15px; }
   .multipurpose__title {
@@ -665,6 +633,10 @@
       margin: auto; }
     .phone__img {
       width: 100%; }
+  .statistics__item {
+    margin-bottom: 30px; }
+  .companies__item {
+    margin-bottom: 30px; }
   .footer__img {
     width: 270px; }
   .footer__end {
@@ -756,6 +728,9 @@
     color: #8c8c8c;
     font-family: Montserrat;
     margin-bottom: 10px; }
+  .list--style-none {
+    list-style: none;
+    justify-content: space-around; }
 
 .statistics {
   display: flex;

@@ -1,10 +1,4 @@
 <!--Техническое задание
-1)Переделать классы (переименовать по БЭМ)
-2)Перенести css в sass файлы (как header, в style.scss остается import)
-3)Разобраться с карточками (отсупы у бутстрапа(если не найду,то делать на flex :(( ))
-4)Пройти валидатор в html без ошибок и предупреждений
-5)Изучить теги для разметки html5, для чего нужны
-6)Переделать div на теги html5 (не все)
 -->
 <!doctype html>
 <html lang="en">
@@ -21,6 +15,8 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 <section class="banner">
@@ -50,9 +46,12 @@
                             </li>
                         </ul>
                         <a href="#" class="header__link">
-                            <img src="images/icon-cart.png" class="header__img"></a>
+                            <!--<img src="images/icon-cart.png" class="header__img">-->
+                            <i class="fas fa-shopping-cart" style="color:#ffffff"></i>
+                        </a>
                         <a href="#" class="header__link">
-                            <img src="images/icon-search.png" class="header__img">
+                            <!--<img src="images/icon-search.png" class="header__img">-->
+                            <i class="fas fa-search" style="color:#ffffff"></i>
                         </a>
 
 
@@ -81,26 +80,27 @@
         <div class="row text-center">
             <div class="col-md-3 service__info"><img src="images/icon.png" class="service__img">
                 <h3 class="service__title service__title-media">Web & App Design</h3>
-                <p class="text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                <p class="text text--primary">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+                    doming id quod
                     mazim.
                 </p>
                 <hr class="service__hr">
             </div>
             <div class="col-md-3 service__info"><img src="images/icon_dev.png" class="service__img">
                 <h3 class="service__title">Development</h3>
-                <p class="text">Nam liber tempor cum soluta nobis eleifend option conguenihil
+                <p class="text text--primary">Nam liber tempor cum soluta nobis eleifend option conguenihil
                     imperdiet doming id quod mazim.</p>
                 <hr class="service__hr">
             </div>
             <div class="col-md-3 service__info"><img src="images/icon_cust.png" class="service__img">
                 <h3 class="service__title">Customization</h3>
-                <p class="text">Nam liber tempor cum soluta nobis eleifend option congue
+                <p class="text text--primary">Nam liber tempor cum soluta nobis eleifend option congue
                     nihil imperdiet doming id quod mazim.</p>
                 <hr class="service__hr">
             </div>
             <div class="col-md-3 service__info"><img src="images/icon_mark.png" class="service__img">
                 <h3 class="service__title">Marketing</h3>
-                <p class="text">Nam liber tempor cum soluta nobis eleifend option congue nihil
+                <p class="text text--primary ">Nam liber tempor cum soluta nobis eleifend option congue nihil
                     imperdiet doming id quod mazim.</p>
                 <hr class="service__hr">
             </div>
@@ -109,15 +109,16 @@
     </div>
 </div>
 
-<div class="container post-content">
-    <h3 class="title title--primary">Waxom is Realization of your Ideas.</h3>
-    <p class="text text--primary">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-        saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium. </p>
+<div class="realization-ideas">
+    <div class="container post-content">
+        <h3 class="title title--primary">Waxom is Realization of your Ideas.</h3>
+        <p class="text text--primary">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+            saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium. </p>
+    </div>
+
+    <img src="images/Gruppa1.png" class="realization-ideas__img">
 </div>
 
-<img src="images/Gruppa1.png" class="">
-
-</div>
 
 <section class="multipurpose">
     <div class="multipurpose__description">
@@ -126,7 +127,7 @@
         </h4>
         <p class="multipurpose__text">Don't Forget to Rate the Template. Thanks so much!</p>
     </div>
-    <button class="multipurpose__butt">Purchase Now</button>
+    <button class="button">Purchase Now</button>
 </section>
 
 <div class="our-projects">
@@ -138,23 +139,23 @@
     </div>
 
     <!--<div>-->
-        <ul class="list">
-            <li class="list__item">
-                <button class="our-projects__button">All</button>
-            </li>
-            <li class="list__item">
-                <button class="our-projects__button">Web Design</button>
-            </li>
-            <li class="list__item">
-                <button class="our-projects__button">Mobile App</button>
-            </li>
-            <li class="list__item">
-                <button class="our-projects__button">Illustration</button>
-            </li>
-            <li class="list__item">
-                <button class="our-projects__button">Photography</button>
-            </li>
-        </ul>
+    <ul class="list">
+        <li class="list__item">
+            <button class="our-projects__button">All</button>
+        </li>
+        <li class="list__item">
+            <button class="our-projects__button">Web Design</button>
+        </li>
+        <li class="list__item">
+            <button class="our-projects__button">Mobile App</button>
+        </li>
+        <li class="list__item">
+            <button class="our-projects__button">Illustration</button>
+        </li>
+        <li class="list__item">
+            <button class="our-projects__button">Photography</button>
+        </li>
+    </ul>
     <!--</div>-->
 
     <div class="block-card">
@@ -215,8 +216,8 @@
     </div>
 
     <div class="our-projects__once-butt">
-        <button class="our-projects__once-butt-butt">
-            <span class="our-projects__once-butt-span">Load More</span>
+        <button class="button">
+            Load More
         </button>
     </div>
 
@@ -228,11 +229,9 @@
             <a href="video/Video_Apple2.mp4" class="block-video__play-video"><img src="images/Play_Video.png"
                                                                                   class="block-video__img-media"></a>
         </div>
-        <!--<div class="block-video__description">-->
         <h3 class="title">Waxom Video Presentation</h3>
         <p class="text text--primary">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius,
             qui sequitur mutationem consuetudium.</p>
-        <!--</div>-->
         <div class="block-video__time">
             03:26
         </div>
@@ -253,13 +252,13 @@
             </p>
         </div>
 
-            <!--<ul class="phone__ul" phone__li>-->
+
         <ul class=" list list--primary">
-                <li>Nam liber tempor cum soluta nobis eleifend option;</li>
-                <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-                <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-                <li>Investigationes demonstraverunt lectores</li>
-            </ul>
+            <li>Nam liber tempor cum soluta nobis eleifend option;</li>
+            <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+            <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+            <li>Investigationes demonstraverunt lectores</li>
+        </ul>
     </div>
 </div>
 
@@ -313,48 +312,51 @@
 <div class="resent">
     <div class="container post-content">
         <h3 class="title title--primary">Recent Posts.</h3>
-        <p class="text text--primary">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+        <p class="text text--primary">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+            Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
         </p>
     </div>
-    <!--<div class="resent__description">-->
-        <!--<h3 class="title title&#45;&#45;primary">Recent Posts.</h3>-->
-        <!--<p class="resent__description">-->
-            <!--Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br>-->
-            <!--processus-->
-            <!--dynamicus, qui sequitur mutationem consuetudium.-->
-        <!--</p>-->
-    <!--</div>-->
-
-    <div class="resent__cart">
-        <div class="resent__cart-items">
+    <div class="resent__card">
+        <div class="resent__card-items">
             <div class="resent__hover"></div>
             <img class="resent__calendar" src="images/7-layers.png" alt="Alt">
             <img class="resent__calendar-hover" src="images/7-layers__hov.png" alt="Alt">
             <img src="images/resent1.png">
-            <span class="resent__title">Lorem ipsum dolor sit amet</span>
-            <p class="resent__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudi.</p>
-            <a href="#" class="resent__link">Read more <img class="resent__link-img" src="images/arrow.png" alt="Alt">
-            </a>
+            <div class="resent__description">
+                <span class="resent__title">Lorem ipsum dolor sit amet</span>
+                <p class="resent__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudi.</p>
+                <a href="#" class="resent__link">Read more <img class="resent__link-img" src="images/arrow.png"
+                                                                alt="Alt">
+                </a>
+            </div>
         </div>
-        <div class="resent__cart-items">
+        <div class="resent__card-items">
             <div class="resent__hover"></div>
             <img class="resent__calendar" src="images/7-layers.png" alt="Alt">
             <img class="resent__calendar-hover" src="images/7-layers__hov.png" alt="Alt">
             <img src="images/resent2.png">
-            <span class="resent__title">Lorem ipsum dolor sit amet</span>
-            <p class="resent__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-            <a href="#" class="resent__link">Read more <img class="resent__link-img" src="images/arrow.png" alt="Alt">
-            </a>
+            <div class="resent__description">
+                <span class="resent__title">Lorem ipsum dolor sit amet</span>
+                <p class="resent__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                    consuetudium.</p>
+                <a href="#" class="resent__link">Read more <img class="resent__link-img" src="images/arrow.png"
+                                                                alt="Alt">
+                </a>
+            </div>
         </div>
-        <div class="resent__cart-items">
+        <div class="resent__card-items">
             <div class="resent__hover"></div>
             <img class="resent__calendar" src="images/7-layers.png" alt="Alt">
             <img class="resent__calendar-hover" src="images/7-layers__hov.png" alt="Alt">
             <img src="images/resent3.png">
-            <span class="resent__title">Lorem ipsum dolor sit amet</span>
-            <p class="resent__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-            <a href="#" class="resent__link">Read more <img class="resent__link-img" src="images/arrow.png" alt="Alt">
-            </a>
+            <div class="resent__description">
+                <span class="resent__title">Lorem ipsum dolor sit amet</span>
+                <p class="resent__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                    consuetudium.</p>
+                <a href="#" class="resent__link">Read more <img class="resent__link-img" src="images/arrow.png"
+                                                                alt="Alt">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -388,17 +390,18 @@
     <div class="container ">
         <div class="row tex-center">
             <div class="col-md-3 ">
-                <div class="footer__logo">
-                    <img src="images/logos.png" alt="Alt">
-                    <h2 class="footer__title-waxom">Waxom</h2>
+                <div class="logo">
+                    <img src="images/logos.png" class="logo__img">
+                    <span class="logo__title">Waxom</span>
                 </div>
                 <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                     nostrud exerci suscipit lobortis claritatem.
 
                 </p>
-                <a href="#" class="footer__link">Read More</a>
-                <img src="images/arrow.png" alt="Alt" class="footer__arrow">
+                <a href="#" class="footer__link">Read More <img src="images/arrow.png" alt="Alt" class="footer__arrow">
+                </a>
+
             </div>
             <div class="col-md-3">
                 <h3 class="footer__title">Recent Posts</h3>
@@ -450,22 +453,17 @@
         </div>
     </div>
 
-
     <footer class="footer__end">
-        <ul class="footer__ul-left">
-            <li><a href="#" class="footer__end-link">Copyright © 2015 <span class="footer__end-span">Waxom</span> |
-            </a></li>
-            <li><a href="#" class="footer__end-link">Privacy Policy</a></li>
-            <li><a href="#" class="footer__end-link">FAQ |</a></li>
-            <li><a href="#" class="footer__end-link">Support</a></li>
+        <ul class="list list--style-none">
+            <li>Copyright © 2015 <span class="footer__end-span">Waxom</span> |</li>
+            <li><a href="#" class="link link--special">Privacy Policy</a> |</li>
+            <li><a href="#" class="link link--special">FAQ</a> |</li>
+            <li><a href="#" class="link link--special">Support</a></li>
         </ul>
 
-        <ul class="footer__ul-right">
-            <li><a href="#" class="footer__end-link">Designed by <span class="footer__end-span">ThemeFire </span> |
-            </a></li>
-            <li><a href="#" class="footer__end-link">Only on <span class="footer__end-span">Envato Market</span> </a>
-            </li>
-        </ul>
+        <p class="text text--gray">
+            Designed <span>by ThemeFire </span> by ThemeFire | Only on <span>Envato Market</span>
+        </p>
 
     </footer>
 </footer>
@@ -477,10 +475,8 @@
 
 </body>
 </html>
-<!--лого сделать класс
+<!--
 ошибки по валидотору исправить
 микроразметка
 изучить em,rem
-исправить блок с логотипами, сделать для них отдельный блок
-уточнить по поводу d-flex align-items-center
 -->

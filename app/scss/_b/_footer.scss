@@ -2,9 +2,8 @@
   background-image: url("../images/Background_foot.png");
   padding-top: 80px;
 
-  &__logo{
-    display: flex;
-    padding-bottom: 25px;
+  & .logo{
+    margin-bottom: 25px;
   }
 
   &__img {
@@ -20,7 +19,7 @@
   }
 
   &__title{
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     color: #ffffff;
     text-align: center;
   }
@@ -28,9 +27,6 @@
   &__title-waxom{
     color: #ffffff;
   }
-  //.footer_items{
-  //  padding-bottom: 15px;
-  //}
 
   &__hr{
     width: 270px;
@@ -88,42 +84,21 @@
     align-items: center;
   }
 
-  &__ul-left{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+  & .list--style-none{
     width: 370px;
-  }
-
-  &__ul-right{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    width: 300px;
-  }
-
-  &__end-link{
-    color: #555555;
-    font-family: Montserrat;
     font-size: 13px;
-    font-weight: 300;
-    line-height: 20px;
-    text-decoration: none;
   }
 
-  &__end-link:hover{
-    text-decoration: none;
-    color: #a0907c;
-  }
-
-  &__end-link:hover &__end-span{
-
-    color: #a0907c;
-  }
-
-  &__end-span{
+  .text--gray span{
     color: #959595
   }
 
+  &__end-span{
+    color: #888888;
+  }
+
+  &__end li{
+    color: #454545;
+  }
 
 }
