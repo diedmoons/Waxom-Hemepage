@@ -1,8 +1,8 @@
-.text{
+.text {
   font-size: 13px;
   font-family: Montserrat;
 
-  &--brown{
+  &--brown {
     color: #c7b299;
     font-family: Montserrat;
     font-size: 14px;
@@ -11,7 +11,7 @@
     text-transform: uppercase;
   }
 
-  &--primary{
+  &--primary {
     color: #8c8c8c;
     font-family: Montserrat;
     font-size: 16px;
@@ -22,10 +22,11 @@
     text-align: center;
   }
 
-  &--white{
+  &--white {
     color: white;
   }
-  &--gray{
+
+  &--gray {
     color: #555555;
   }
 }

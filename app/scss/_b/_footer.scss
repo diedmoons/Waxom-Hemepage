@@ -1,8 +1,8 @@
-.footer{
+.footer {
   background-image: url("../images/Background_foot.png");
   padding-top: 80px;
 
-  & .logo{
+  & .logo {
     margin-bottom: 25px;
   }
 
@@ -14,33 +14,32 @@
     margin: auto;
   }
 
-  &__img-items{
+  &__img-items {
     padding-bottom: 10px;
   }
 
-  &__title{
+  &__title {
     margin-bottom: 25px;
     color: #ffffff;
     text-align: center;
   }
 
-  &__title-waxom{
+  &__title-waxom {
     color: #ffffff;
   }
 
-  &__hr{
-    width: 270px;
+  &__hr {
     height: 1px;
     background-color: #252525;
     border: 0px;
   }
 
-  &__arrow{
+  &__arrow {
     padding-bottom: 1px;
     padding-left: 3px;
   }
 
-  &__text{
+  &__text {
     color: #555555;
     font-family: Montserrat;
     font-size: 14px;
@@ -48,7 +47,7 @@
     line-height: 20px;
   }
 
-  &__time{
+  &__time {
     color: #363636;
     font-family: Montserrat;
     font-size: 12px;
@@ -56,26 +55,28 @@
     line-height: 20px;
   }
 
-  &__span1{
+  &__span1 {
     color: #00bff3;
   }
-  &__span2{
+
+  &__span2 {
     color: #959595;
   }
 
-  &__link{
+  &__link {
     color: #d1d1d1;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
   }
-  &__link:hover{
+
+  &__link:hover {
     text-decoration: none;
     color: #d1d1d1;
   }
 
-  &__end{
+  &__end {
     background-color: #111111;
     height: 110px;
     margin-top: 50px;
@@ -84,21 +85,20 @@
     align-items: center;
   }
 
-  & .list--style-none{
-    width: 370px;
+  & .list--style-none {
     font-size: 13px;
   }
 
-  .text--gray span{
+  .text--gray span {
     color: #959595
   }
 
-  &__end-span{
+  &__end-span {
     color: #888888;
   }
 
-  &__end li{
+  &__end li {
     color: #454545;
+    margin-left: 5px;
   }
-
 }

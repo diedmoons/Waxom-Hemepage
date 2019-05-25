@@ -1,25 +1,27 @@
-.multipurpose{
+.multipurpose {
   display: flex;
   justify-content: space-around;
   padding: 50px;
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
   margin-bottom: 80px;
 
-  &__description{
+  &__description {
     line-height: 0%;
   }
-  &__text{
+
+  &__text {
     color: #4b423e;
     font-family: Montserrat;
     font-size: 18px;
   }
-  &__title{
+
+  &__title {
     color: #fff;
     font-family: Raleway;
     font-size: 28px;
   }
 
-  &__name{
+  &__name {
     color: #baa68f;
   }
 }

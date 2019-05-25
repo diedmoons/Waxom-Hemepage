@@ -1,23 +1,27 @@
-.statistics{
+.statistics {
   display: flex;
   justify-content: center;
 
-  &__item{
+  &__item {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  &__img{
+
+  &__img {
     padding-bottom: 20px;
   }
-  &__content{
+
+  &__content {
     margin-bottom: 20px;
   }
-  &__content p{
+
+  &__content p {
     margin-bottom: 0;
   }
-  &__hr{
+
+  &__hr {
     width: 30px;
     height: 2px;
     background-color: #ffffff;

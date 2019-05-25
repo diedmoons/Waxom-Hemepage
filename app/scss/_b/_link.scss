@@ -1,11 +1,13 @@
-.link{
+.link {
   font-size: 14px;
   color: #fff;
-  &:hover{
+
+  &:hover {
     text-decoration: none;
     color: #fff;
   }
-  &--special{
+
+  &--special {
     color: #555555;
     font-family: Montserrat;
     font-size: 13px;
@@ -13,7 +15,8 @@
     line-height: 20px;
     text-decoration: none;
   }
-  &--special:hover{
+
+  &--special:hover {
     text-decoration: none;
     color: #a0907c;
   }

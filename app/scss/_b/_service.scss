@@ -1,27 +1,27 @@
-.service{
+.service {
   padding: 50px;
   margin-bottom: 35px;
 
-  &__hr{
+  &__hr {
     width: 70px;
     height: 3px;
     background-color: #f1eee9;
 
   }
-  &__info:hover  .service__hr {
-    background-color:  #c7b299;
+
+  &__info:hover .service__hr {
+    background-color: #c7b299;
     transition: all .3s ease-in-out;
 
   }
 
-  &__info:hover .service__title{
-    color:  #c7b299;
+  &__info:hover .service__title {
+    color: #c7b299;
     transition: all .3s ease-in-out;
   }
 
-  &__img{
+  &__img {
     width: 44px;
     height: 44px
   }
 }
-

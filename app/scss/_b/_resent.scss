@@ -1,33 +1,36 @@
-.resent{
+.resent {
   padding-top: 80px;
   padding-bottom: 50px;
 
-  &__card{
+  &__card {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  &__card-items{
+  &__card-items {
     width: 370px;
     height: 395px;
-    border: 1px solid #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     position: relative;
+    transition: all 0.25s;
+    margin-bottom: 20px;
   }
 
-  &__card-items:hover{
+  &__card-items:hover {
     background-color: #362f2d;
     border: none;
   }
 
-  &__card-items:hover &__hover{
+  &__card-items:hover &__hover {
     opacity: 1;
   }
 
-  &__description{
-    margin: 25px;  }
+  &__description {
+    margin: 25px;
+  }
 
-  &__title{
+  &__title {
     color: #555555;
     font-family: Raleway;
     font-size: 20px;
@@ -36,7 +39,7 @@
 
   }
 
-  &__text{
+  &__text {
     color: #8c8c8c;
     font-family: Montserrat;
     font-size: 14px;
@@ -44,7 +47,7 @@
     line-height: 22px;
   }
 
-  &__link{
+  &__link {
     color: #c7b299;
     font-family: Montserrat;
     font-size: 14px;
@@ -52,17 +55,19 @@
     line-height: 20px;
 
   }
-  &__link-img{
+
+  &__link-img {
     padding-bottom: 1px;
     padding-left: 3px;
 
   }
-  &__link:hover{
+
+  &__link:hover {
     text-decoration: none;
     color: #c7b299;
   }
 
-  &__hover{
+  &__hover {
     position: absolute;
     width: 370px;
     height: 220px;
@@ -70,40 +75,38 @@
     opacity: 0;
   }
 
-  &__calendar{
+  &__calendar {
     position: absolute;
     top: 20px;
     left: 20px;
   }
 
-  &__calendar-hover{
+  &__calendar-hover {
     position: absolute;
     top: 20px;
     left: 20px;
     opacity: 0;
   }
 
-  &__card-items:hover &__calendar-hover{
+  &__card-items:hover &__calendar-hover {
     opacity: 1;
   }
 
-  &__card-items:hover &__title{
+  &__card-items:hover &__title {
     color: #c7b299;
   }
 
-  &__card-items:hover &__text{
+  &__card-items:hover &__text {
     color: #ffffff;
   }
 
-  &__div-buttons{
+  &__div-buttons {
     text-align: center;
     padding: 40px;
   }
 
-  &__button{
+  &__button {
     border: 0px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
   }
-
-
 }

@@ -1,25 +1,22 @@
-.our-projects{
+.our-projects {
   display: flex;
   flex-direction: column;
 
-
-  &__button{
+  &__button {
     border-radius: 3px;
     border: 1px solid #ebebeb;
     background-color: white;
     padding: 5px 10px;
   }
 
-  &__button:active{
+  &__button:active {
     background-color: #998675;
     color: white;
   }
 
-  &__once-butt{
+  &__once-butt {
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
   }
-
-
 }

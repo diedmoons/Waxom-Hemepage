@@ -13,7 +13,7 @@
   .header__right img:last-child {
     margin-right: 0; }
   .header__link {
-    padding-right: 10px; }
+    margin-left: 10px; }
   .header__img {
     width: 16px;
     height: 20px; }
@@ -60,7 +60,7 @@
   font-family: Raleway;
   font-size: 36px;
   text-align: center; }
-  .title__size_big {
+  .title--size-big {
     font-family: "Raleway - Extra Bold";
     font-size: 52px; }
   .title--color-black {
@@ -94,13 +94,9 @@
     margin-right: 7px; }
   .menu__item:last-child {
     margin-right: 0; }
-  .menu__link {
+  .menu__open {
+    display: none;
     color: white; }
-  .menu__icon {
-    color: white;
-    display: none; }
-  .menu__item-span {
-    padding-right: 10px; }
   .menu__icon:hover {
     text-decoration: none;
     color: white; }
@@ -357,8 +353,10 @@
   .resent__card-items {
     width: 370px;
     height: 395px;
-    border: 1px solid #f8f8f8;
-    position: relative; }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.25s;
+    margin-bottom: 20px; }
   .resent__card-items:hover {
     background-color: #362f2d;
     border: none; }
@@ -458,7 +456,6 @@
   .footer__title-waxom {
     color: #ffffff; }
   .footer__hr {
-    width: 270px;
     height: 1px;
     background-color: #252525;
     border: 0px; }
@@ -498,14 +495,14 @@
     justify-content: space-around;
     align-items: center; }
   .footer .list--style-none {
-    width: 370px;
     font-size: 13px; }
   .footer .text--gray span {
     color: #959595; }
   .footer__end-span {
     color: #888888; }
   .footer__end li {
-    color: #454545; }
+    color: #454545;
+    margin-left: 5px; }
 
 @media screen and (max-width: 1200px) {
   img {
@@ -531,16 +528,6 @@
     font-size: 1.1rem; }
   .service__title-media {
     font-size: 17px; }
-  .menu {
-    width: auto; }
-    .menu__item {
-      display: none; }
-    .menu__icon {
-      display: block; }
-    .menu__item-icon {
-      padding-top: 3px;
-      font-size: 22px;
-      padding-right: 10px; }
   .banner__container {
     padding-right: 0; }
   .phone {
@@ -565,7 +552,25 @@
     .phone__li {
       padding-left: 25px; }
   .footer__img {
-    width: auto; } }
+    width: auto; }
+  .menu {
+    width: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    display: none;
+    background: #777; }
+    .menu__item {
+      padding: 5px;
+      margin-right: 0;
+      box-shadow: 0px 1px 2px -2px rgba(0, 0, 0, 0.4); }
+    .menu.active {
+      display: block; }
+    .menu li {
+      display: block; }
+    .menu__open {
+      display: block;
+      cursor: pointer; } }
 
 @media screen and (max-width: 990px) {
   .numbers__row-item3 hr {
@@ -629,10 +634,9 @@
       font-size: 12px; }
     .phone__block-ul {
       align-self: center; }
-    .phone__block-img {
-      margin: auto; }
     .phone__img {
-      width: 100%; }
+      width: 75%;
+      margin: auto; }
   .statistics__item {
     margin-bottom: 30px; }
   .companies__item {
@@ -704,7 +708,11 @@
     font-size: 13px; }
   .our-projects__ul {
     width: auto;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .companies__content {
+    padding: 90px 0; }
+  .companies__item {
+    margin-bottom: 40px; } }
 
 .post-content {
   margin-bottom: 50px;
@@ -718,7 +726,7 @@
     color: #8c8c8c;
     font-family: Montserrat;
     font-size: 14px;
-    margin-right: 20px; }
+    margin-left: 20px; }
   .list--primary {
     display: block; }
   .list--primary li {
@@ -751,3 +759,30 @@
     height: 2px;
     background-color: #ffffff;
     margin: 0 auto; }
+
+.btn-top {
+  background-color: #777;
+  color: #ffffff;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 99;
+  border: none;
+  border-radius: 15%;
+  padding: 4px 8px;
+  display: none;
+  opacity: 0.6;
+  outline: none;
+  transition: all 0.25s; }
+  .btn-top:hover {
+    opacity: 1; }
+  @media screen and (max-width: 768px) {
+    .btn-top {
+      right: 10px; } }
+  @media screen and (max-width: 420px) {
+    .btn-top {
+      position: static;
+      display: block;
+      margin: -5px auto 15px;
+      font-size: 15px;
+      padding: 0 5px; } }

@@ -18,12 +18,13 @@
   &__right img:last-child {
     margin-right: 0;
   }
-  &__link{
-    padding-right: 10px;
+
+  &__link {
+    margin-left: 10px;
   }
-  &__img{
+
+  &__img {
     width: 16px;
     height: 20px;
   }
-
 }

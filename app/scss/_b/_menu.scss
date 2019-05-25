@@ -1,4 +1,4 @@
-.menu{
+.menu {
   list-style-type: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -6,32 +6,27 @@
   display: flex;
   justify-content: space-around;
 
-  &.responsive{
+  &.responsive {
     position: relative;
     top: 70px;
     left: 100px;
   }
 
-  &__item{
+  &__item {
     display: inline-block;
     margin-right: 7px;
   }
-  &__item:last-child{
+
+  &__item:last-child {
     margin-right: 0;
   }
 
-  &__link{
-    color: white;
-  }
-  &__icon{
-    color: white;
+  &__open {
     display: none;
+    color: white;
   }
 
-  &__item-span{
-    padding-right: 10px;
-  }
-  &__icon:hover{
+  &__icon:hover {
     text-decoration: none;
     color: white;
   }

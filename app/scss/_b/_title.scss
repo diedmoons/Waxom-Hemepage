@@ -1,34 +1,33 @@
-.title{
+.title {
   color: #ffffff;
   font-family: Raleway;
   font-size: 36px;
   text-align: center;
 
-  &__size_big{
+  &--size-big {
     font-family: "Raleway - Extra Bold";
     font-size: 52px;
   }
-  &--color-black{
+
+  &--color-black {
     color: #555555;
   }
 
-  &--count{
+  &--count {
     font-family: "Montserrat - Ultra Light";
     font-size: 48px;
     line-height: 36px;
   }
 
-  &--primary{
+  &--primary {
     color: #555555;
     font-family: "Raleway - Semi Bold";
     font-size: 30px;
     font-weight: 400;
   }
-  &--then-name{
+
+  &--then-name {
     font-family: Raleway;
     font-size: 28px;
   }
-
-
-
 }

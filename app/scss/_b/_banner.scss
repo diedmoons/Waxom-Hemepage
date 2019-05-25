@@ -1,36 +1,37 @@
-.banner{
+.banner {
   height: 100vh;
-  background: url("../images/photo.png")no-repeat;
+  background: url("../images/photo.png") no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-start;
 
-  &:after{
+  &:after {
     content: '';
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     position: absolute;
   }
 
-  &__info{
+  &__info {
     align-self: center;
     color: #fff;
     text-align: center;
     margin: auto;
   }
 
-  &__content{
+  &__content {
     display: flex;
     z-index: 33;
     flex-direction: column;
     height: 100vh;
   }
-   &__full-head{
+
+  &__full-head {
     padding-top: 20px;
   }
 
-  &__text{
+  &__text {
     max-width: 550px;
   }
 }
