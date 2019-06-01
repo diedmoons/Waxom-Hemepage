@@ -1,10 +1,10 @@
-window.onload  = function () {
+window.onload = function () {
     var menuStyle = getComputedStyle(menu);
     openMenu.onclick = function () {
-        if (menuStyle.display == "none"){
+        if (menuStyle.display == "none") {
             menu.classList.add("active");
-        }
-        else {
+            openMenu.classList.add("active")
+        } else {
             menu.classList.remove("active");
         }
     }

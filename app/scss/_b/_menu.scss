@@ -6,12 +6,6 @@
   display: flex;
   justify-content: space-around;
 
-  &.responsive {
-    position: relative;
-    top: 70px;
-    left: 100px;
-  }
-
   &__item {
     display: inline-block;
     margin-right: 7px;
@@ -19,11 +13,6 @@
 
   &__item:last-child {
     margin-right: 0;
-  }
-
-  &__open {
-    display: none;
-    color: white;
   }
 
   &__icon:hover {

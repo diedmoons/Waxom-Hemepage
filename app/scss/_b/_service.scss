@@ -6,18 +6,19 @@
     width: 70px;
     height: 3px;
     background-color: #f1eee9;
-
+    transition: all .3s ease-in-out;
   }
-
-  &__info:hover .service__hr {
+  &__title{
+    transition: all .3s ease-in-out;
+  }
+  &__info:hover &__hr {
     background-color: #c7b299;
     transition: all .3s ease-in-out;
 
   }
 
-  &__info:hover .service__title {
+  &__info:hover &__title {
     color: #c7b299;
-    transition: all .3s ease-in-out;
   }
 
   &__img {

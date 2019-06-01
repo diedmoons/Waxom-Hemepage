@@ -19,7 +19,8 @@
     height: 20px; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 0 !important; }
 
 .banner {
   height: 100vh;
@@ -60,21 +61,21 @@
   font-family: Raleway;
   font-size: 36px;
   text-align: center; }
-  .title--size-big {
+  .title__size-big {
     font-family: "Raleway - Extra Bold";
     font-size: 52px; }
-  .title--color-black {
+  .title__color-black {
     color: #555555; }
-  .title--count {
+  .title__count {
     font-family: "Montserrat - Ultra Light";
     font-size: 48px;
     line-height: 36px; }
-  .title--primary {
+  .title__primary {
     color: #555555;
     font-family: "Raleway - Semi Bold";
     font-size: 30px;
     font-weight: 400; }
-  .title--then-name {
+  .title__then-name {
     font-family: Raleway;
     font-size: 28px; }
 
@@ -85,18 +86,11 @@
   width: 640px;
   display: flex;
   justify-content: space-around; }
-  .menu.responsive {
-    position: relative;
-    top: 70px;
-    left: 100px; }
   .menu__item {
     display: inline-block;
     margin-right: 7px; }
   .menu__item:last-child {
     margin-right: 0; }
-  .menu__open {
-    display: none;
-    color: white; }
   .menu__icon:hover {
     text-decoration: none;
     color: white; }
@@ -107,14 +101,14 @@
   .link:hover {
     text-decoration: none;
     color: #fff; }
-  .link--special {
+  .link__special {
     color: #555555;
     font-family: Montserrat;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
     text-decoration: none; }
-  .link--special:hover {
+  .link__special:hover {
     text-decoration: none;
     color: #a0907c; }
 
@@ -124,9 +118,17 @@
   padding: 5px 35px;
   border-radius: 5px;
   margin: 10px;
-  color: #ffffff; }
+  color: #ffffff;
+  outline: none; }
   .button:active {
     box-shadow: inset 0 -3px 0 #736357; }
+  .button__open-menu {
+    display: none;
+    color: white;
+    background: none;
+    border: none; }
+  .button__open-menu:active {
+    color: #777; }
 
 .service {
   padding: 50px;
@@ -134,13 +136,15 @@
   .service__hr {
     width: 70px;
     height: 3px;
-    background-color: #f1eee9; }
+    background-color: #f1eee9;
+    transition: all .3s ease-in-out; }
+  .service__title {
+    transition: all .3s ease-in-out; }
   .service__info:hover .service__hr {
     background-color: #c7b299;
     transition: all .3s ease-in-out; }
   .service__info:hover .service__title {
-    color: #c7b299;
-    transition: all .3s ease-in-out; }
+    color: #c7b299; }
   .service__img {
     width: 44px;
     height: 44px; }
@@ -198,7 +202,7 @@
     line-height: 20px;
     padding-left: 30px;
     transition: all 0.25s; }
-  .block-card__hover-div {
+  .block-card__hover {
     width: 370px;
     height: 237px;
     position: absolute;
@@ -208,11 +212,11 @@
     justify-content: center;
     align-items: center;
     transition: all 0.25s; }
-  .block-card__item:hover .block-card__hover-div {
+  .block-card__item:hover .block-card__hover {
     opacity: 1; }
   .block-card__item:hover {
     background-color: #362f2d; }
-  .block-card__a {
+  .block-card__link {
     padding-right: 10px; }
   .block-card__item:hover .block-card__title {
     color: #ffffff; }
@@ -318,14 +322,14 @@
 .text {
   font-size: 13px;
   font-family: Montserrat; }
-  .text--brown {
+  .text__brown {
     color: #c7b299;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
     text-transform: uppercase; }
-  .text--primary {
+  .text__primary {
     color: #8c8c8c;
     font-family: Montserrat;
     font-size: 16px;
@@ -334,9 +338,9 @@
     max-width: 650px;
     margin: auto;
     text-align: center; }
-  .text--white {
+  .text__white {
     color: white; }
-  .text--gray {
+  .text__gray {
     color: #555555; }
 
 .numbers {
@@ -355,7 +359,7 @@
     height: 395px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
-    transition: all 0.25s;
+    transition: all .3s ease-in-out;
     margin-bottom: 20px; }
   .resent__card-items:hover {
     background-color: #362f2d;
@@ -393,16 +397,19 @@
     width: 370px;
     height: 220px;
     background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0; }
+    opacity: 0;
+    transition: all .3s ease-in-out; }
   .resent__calendar {
     position: absolute;
     top: 20px;
-    left: 20px; }
+    left: 20px;
+    transition: all .3s ease-in-out; }
   .resent__calendar-hover {
     position: absolute;
     top: 20px;
     left: 20px;
-    opacity: 0; }
+    opacity: 0;
+    transition: all .3s ease-in-out; }
   .resent__card-items:hover .resent__calendar-hover {
     opacity: 1; }
   .resent__card-items:hover .resent__title {
@@ -568,9 +575,9 @@
       display: block; }
     .menu li {
       display: block; }
-    .menu__open {
-      display: block;
-      cursor: pointer; } }
+  .button__open-menu {
+    display: block;
+    cursor: pointer; } }
 
 @media screen and (max-width: 990px) {
   .numbers__row-item3 hr {
@@ -579,8 +586,6 @@
     margin-top: 35px; } }
 
 @media screen and (max-width: 805px) {
-  .figure__title-media {
-    font-size: 15px; }
   .multipurpose__title {
     font-size: 26px; }
   .multipurpose__text {
@@ -727,16 +732,16 @@
     font-family: Montserrat;
     font-size: 14px;
     margin-left: 20px; }
-  .list--primary {
+  .list__primary {
     display: block; }
-  .list--primary li {
+  .list__primary li {
     list-style: none;
     background: url("../images/01.png") no-repeat left center;
     padding-left: 38px;
     color: #8c8c8c;
     font-family: Montserrat;
     margin-bottom: 10px; }
-  .list--style-none {
+  .list__style-none {
     list-style: none;
     justify-content: space-around; }
 

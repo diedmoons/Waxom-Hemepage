@@ -13,7 +13,7 @@
     height: 395px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     position: relative;
-    transition: all 0.25s;
+    transition: all .3s ease-in-out;
     margin-bottom: 20px;
   }
 
@@ -73,12 +73,14 @@
     height: 220px;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
+    transition: all .3s ease-in-out;
   }
 
   &__calendar {
     position: absolute;
     top: 20px;
     left: 20px;
+    transition: all .3s ease-in-out;
   }
 
   &__calendar-hover {
@@ -86,6 +88,7 @@
     top: 20px;
     left: 20px;
     opacity: 0;
+    transition: all .3s ease-in-out;
   }
 
   &__card-items:hover &__calendar-hover {

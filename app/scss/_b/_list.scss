@@ -10,11 +10,11 @@
     margin-left: 20px;
   }
 
-  &--primary{
+  &__primary{
     display: block;
   }
 
-  &--primary li{
+  &__primary li{
     list-style: none;
     background: url("../images/01.png") no-repeat left center;
     padding-left: 38px;
@@ -23,7 +23,7 @@
     margin-bottom: 10px;
   }
 
-  &--style-none{
+  &__style-none{
     list-style: none;
     justify-content: space-around;
   }

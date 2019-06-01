@@ -5,8 +5,21 @@
   border-radius: 5px;
   margin: 10px;
   color: #ffffff;
+  outline: none;
+
 
   &:active {
     box-shadow: inset 0 -3px 0 #736357;
   }
+
+  &__open-menu {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+  }
+  &__open-menu:active{
+    color: #777;
+  }
+
 }

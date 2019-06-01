@@ -4,29 +4,29 @@
   font-size: 36px;
   text-align: center;
 
-  &--size-big {
+  &__size-big {
     font-family: "Raleway - Extra Bold";
     font-size: 52px;
   }
 
-  &--color-black {
+  &__color-black {
     color: #555555;
   }
 
-  &--count {
+  &__count {
     font-family: "Montserrat - Ultra Light";
     font-size: 48px;
     line-height: 36px;
   }
 
-  &--primary {
+  &__primary {
     color: #555555;
     font-family: "Raleway - Semi Bold";
     font-size: 30px;
     font-weight: 400;
   }
 
-  &--then-name {
+  &__then-name {
     font-family: Raleway;
     font-size: 28px;
   }

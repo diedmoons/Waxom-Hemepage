@@ -120,13 +120,13 @@
       display: block;
     }
 
-    &__open {
+  }
+  .button{
+    &__open-menu {
       display: block;
       cursor: pointer;
     }
-
   }
-
 }
 
 @media screen and (max-width: 990px) {
@@ -143,11 +143,6 @@
 
 
 @media screen and (max-width: 805px) {
-  .figure {
-    &__title-media {
-      font-size: 15px;
-    }
-  }
 
   .multipurpose {
 
